@@ -1,0 +1,49 @@
+<html>
+<head>
+<title>Josie Le Form Page</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <p><a href="index.html">Go to Introductory Page</a></p>
+  <hr>
+  <h2>Log in with your account</h2>
+  <form action="/actionpage.py">
+      Username: <input type="text" name="name"><br>
+      Password: <input type="password" name="pwd"><br>
+      <input type="submit" value="Submit">
+    </form>
+  <h4>Customize your order</h4>
+    <table>
+      <tr>
+        <td valign="top">
+          Choose a Meat Choice:<br>
+          <select name="Entree">
+            <option value="Beef">Beef</option>
+            <option value="Chicken">Chicken</option>
+            <option value="Shrimp">Shrimp</option>
+            <option value="Combination">Combination</option>
+          </select>
+        </td>
+
+        <td>
+          Soup Choice:<br>
+            <input type="radio" name="food" value="Egg Soup" checked>Egg Soup<br>
+            <input type="radio" name="food" value="Tomato Soup">Tomato Soup<br>
+            <input type="radio" name="food" value="Spicy Soup">Spicy Soup
+        </td>
+
+        <td valign="top">
+            Choose Spice Level:<br>
+            <input type="checkbox" name="Less" value="Less" checked>Less Spicy<br>
+            <input type="checkbox" name="Medium" value="Medium">Medium Spicy <br>
+            <input type="checkbox" name="More" value="More">More Spicy
+        </td> 
+      </tr>
+      <tr>Date of order: <input type="date" name="orderDate" required="required"></tr>
+      
+    </table>
+    <input type="submit" value="Add to cart">   <input type="reset">
+  </form>
+</body>
+</html>
